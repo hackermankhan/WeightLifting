@@ -6,3 +6,9 @@ Features:
 - Each exercise displays images on how to do it, what equipment will be needed and what muscle groups are worked on.
 - Each day you can view "Today's Work Out" telling you what you are going to work on today and what muscle groups are targeted.
 - All workout routines are saved locally through Core Data.
+
+<div style="float: left;">
+<img src="images/screenshot1.png" width="300"/>
+<img src="images/screenshot2.png" width="300"/>
+<img src="images/screenshot3.png" width="300"/>
+</div>
