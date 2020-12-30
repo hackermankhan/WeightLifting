@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BreakDownCell" rowHeight="356" id="MI0-Ok-XHX" customClass="BreakDownCell" customModule="WeightLiftingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MI0-Ok-XHX" id="DWV-yN-hxQ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Break Down:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZQ-4z-0ug">
+                        <rect key="frame" x="81.5" y="2" width="251" height="25"/>
+                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="22"/>
+                        <color key="textColor" red="0.039215686270000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="List of muscles:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvx-AI-vHF">
+                        <rect key="frame" x="20" y="35" width="394" height="74"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakdown:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCg-p4-Nh1">
+                        <rect key="frame" x="20" y="117" width="374" height="72"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="72" id="ffo-cl-rWn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RCg-p4-Nh1" firstAttribute="bottom" secondItem="DWV-yN-hxQ" secondAttribute="bottomMargin" id="LeX-aI-83f"/>
+                    <constraint firstItem="hZQ-4z-0ug" firstAttribute="centerX" secondItem="DWV-yN-hxQ" secondAttribute="centerX" id="XXd-7w-pbc"/>
+                    <constraint firstItem="RCg-p4-Nh1" firstAttribute="leading" secondItem="DWV-yN-hxQ" secondAttribute="leadingMargin" id="Yd9-mk-Mc9"/>
+                    <constraint firstItem="RCg-p4-Nh1" firstAttribute="trailing" secondItem="DWV-yN-hxQ" secondAttribute="trailingMargin" id="Yhk-cv-Pef"/>
+                    <constraint firstItem="hZQ-4z-0ug" firstAttribute="top" secondItem="DWV-yN-hxQ" secondAttribute="top" constant="2" id="zvX-pb-9xu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="breakDownLabel" destination="RCg-p4-Nh1" id="VFU-He-B8Y"/>
+                <outlet property="musclesLabel" destination="dvx-AI-vHF" id="j2v-Wq-MB5"/>
+            </connections>
+            <point key="canvasLocation" x="142.02898550724638" y="88.392857142857139"/>
+        </tableViewCell>
+    </objects>
+</document>
